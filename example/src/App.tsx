@@ -1,20 +1,11 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import CommonHandy from 'react-native-common-handy';
+import { StyleSheet, View } from 'react-native';
+import { useApplicationStateChangeAbility } from 'react-native-common-handy';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    CommonHandy.multiply(3, 7).then(setResult);
-  }, []);
-
-  return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
-  );
+  useApplicationStateChangeAbility();
+  return <View style={styles.container} />;
 }
 
 const styles = StyleSheet.create({
