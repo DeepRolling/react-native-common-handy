@@ -1,6 +1,6 @@
 {
   "name": "react-native-common-handy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Handy code encapsulation in react-native project.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
