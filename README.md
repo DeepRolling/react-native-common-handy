@@ -21,7 +21,7 @@ yarn add react-native-common-handy
 
 This project depends on others packages, so you need install them to make this library work :
 ```sh
-yarn add react-native-status-bar-height@2.6.0 react-native-simple-toast@1.1.3 react-native-android-open-settings@@1.3.0 react-native-vector-icons@7.1.0
+yarn add react-native-status-bar-height@2.6.0 react-native-simple-toast@1.1.3 react-native-android-open-settings@1.3.0 react-native-vector-icons@7.1.0
 ```
 
 ## Usage(TypeScript)
