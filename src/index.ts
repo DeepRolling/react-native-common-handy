@@ -24,6 +24,8 @@ export * from './navigation/navigationHelper';
 export * from './navigation/navigationHook';
 export * from './navigation/InteractionManagerWA';
 
+export * from './storage/keyValueStorage';
+
 export * from './hooks';
 export * from './BaseFit';
 export * from './Layout';
