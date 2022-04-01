@@ -30,3 +30,7 @@ export * from './hooks';
 export * from './BaseFit';
 export * from './Layout';
 export * from './SystemSpecifiedAbility';
+
+
+export * from './string/index';
+export * from './string/password';
