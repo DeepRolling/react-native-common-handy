@@ -10,15 +10,15 @@ export function persistToLocal(purpose: string, data: string) {
 export function takeoutDataFromLocal(purpose: string) {
   console.log(`take out data with purpose ${purpose}`);
   return new Promise<string>((resolve, reject) => {
-    AsyncStorage.getItem(purpose, (error, result) => {
-      if (error !== undefined) {
-        reject(error);
-      } else {
+    AsyncStorage.getItem(purpose, (error:any, result) => {
+      if (error === undefined || error === null) {
         if (result !== null && result !== undefined) {
           resolve(result);
         } else {
           reject();
         }
+      } else {
+        reject(error);
       }
     });
   });
@@ -52,9 +52,7 @@ type DataWithKeyFilled = {
 function getItemWithKeyFilled(key: string) {
   return new Promise<DataWithKeyFilled>((resolve, reject) => {
     AsyncStorage.getItem(key, (error, result) => {
-      if (error !== undefined) {
-        reject(error);
-      } else {
+      if (error === undefined || error === null) {
         if (result !== null && result !== undefined) {
           resolve({
             key: key,
@@ -63,6 +61,8 @@ function getItemWithKeyFilled(key: string) {
         } else {
           reject();
         }
+      } else {
+        reject(error);
       }
     });
   });

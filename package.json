@@ -1,6 +1,6 @@
 {
   "name": "react-native-common-handy",
-  "version": "1.1.5",
+  "version": "1.2.2",
   "description": "Handy code encapsulation in react-native project.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -76,7 +76,9 @@
     "@types/react-native-vector-icons": "6.4.6",
     "@react-navigation/native": "^6.0.8",
     "@react-navigation/native-stack": "^6.5.2",
-    "@react-native-async-storage/async-storage": "^1.15.5"
+    "@react-native-async-storage/async-storage": "^1.15.5",
+    "react-native-image-crop-picker": "^0.37.3",
+    "react-native-permissions": "^3.0.1"
   },
   "peerDependencies": {
     "react": "*",
@@ -87,7 +89,9 @@
     "react-native-vector-icons": "7.1.0",
     "@react-navigation/native": "^6.0.8",
     "@react-navigation/native-stack": "^6.5.2",
-    "@react-native-async-storage/async-storage": "^1.15.5"
+    "@react-native-async-storage/async-storage": "^1.15.5",
+    "react-native-image-crop-picker": "^0.37.3",
+    "react-native-permissions": "^3.0.1"
   },
   "jest": {
     "preset": "react-native",

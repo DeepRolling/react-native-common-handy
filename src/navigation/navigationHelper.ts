@@ -11,7 +11,7 @@ class NavigationHelper {
   private _pushing: boolean;
   private _replacing: boolean;
   private _backTwice: boolean;
-  private isJump: boolean;
+
   private readonly _backActionMap: {
     [key: string]: () => void;
   };
@@ -21,7 +21,7 @@ class NavigationHelper {
     this._backTwice = false;
     this._replacing = false;
     this._backActionMap = {};
-    this.isJump = true;
+
   }
 
   public setNavigator(ref: any) {
@@ -39,11 +39,8 @@ class NavigationHelper {
    * @param params
    */
   public navigate = (name: string, params?: any) => {
-    if (this.isJump) {
-      this.isJump = false;
       const {dispatch} = this.navigator;
       dispatch(CommonActions.navigate({name, params}));
-    }
   };
 
   /**

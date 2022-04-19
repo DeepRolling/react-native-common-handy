@@ -34,3 +34,8 @@ export * from './SystemSpecifiedAbility';
 
 export * from './string/index';
 export * from './string/password';
+
+export * from './permission/permission';
+
+
+export * from './imageOrVideo/index';
